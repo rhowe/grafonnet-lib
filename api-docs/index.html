@@ -1,0 +1,1572 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
+    
+    
+      
+        <title>API Docs - Grafonnet</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ff6e42">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-orange" data-md-color-accent="orange">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api-docs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Grafonnet" class="md-header__button md-logo" aria-label="Grafonnet" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Grafonnet
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              API Docs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Grafonnet" class="md-nav__button md-logo" aria-label="Grafonnet" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Grafonnet
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        Usage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../style-guide/" class="md-nav__link">
+        Style Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../community-plugins/" class="md-nav__link">
+        Community Plugins
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          API Docs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        API Docs
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#alertconditionnew" class="md-nav__link">
+    alertCondition.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alertlistnew" class="md-nav__link">
+    alertlist.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annotationdatasource" class="md-nav__link">
+    annotation.datasource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bargaugepanelnew" class="md-nav__link">
+    barGaugePanel.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloudmonitoringtarget" class="md-nav__link">
+    cloudmonitoring.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloudwatchtarget" class="md-nav__link">
+    cloudwatch.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboardnew" class="md-nav__link">
+    dashboard.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashlistnew" class="md-nav__link">
+    dashlist.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elasticsearchtarget" class="md-nav__link">
+    elasticsearch.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gaugepanelnew" class="md-nav__link">
+    gaugePanel.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grafana" class="md-nav__link">
+    grafana
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphpanelnew" class="md-nav__link">
+    graphPanel.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphitetarget" class="md-nav__link">
+    graphite.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heatmappanelnew" class="md-nav__link">
+    heatmapPanel.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#influxdbtarget" class="md-nav__link">
+    influxdb.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkdashboards" class="md-nav__link">
+    link.dashboards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logpanelnew" class="md-nav__link">
+    logPanel.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lokitarget" class="md-nav__link">
+    loki.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#piechartpanelnew" class="md-nav__link">
+    pieChartPanel.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pluginlistnew" class="md-nav__link">
+    pluginlist.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prometheustarget" class="md-nav__link">
+    prometheus.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rownew" class="md-nav__link">
+    row.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#singlestatnew" class="md-nav__link">
+    singlestat.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sqltarget" class="md-nav__link">
+    sql.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statpanelnew" class="md-nav__link">
+    statPanel.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tablenew" class="md-nav__link">
+    table.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templatenew" class="md-nav__link">
+    template.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templateinterval" class="md-nav__link">
+    template.interval
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templatedatasource" class="md-nav__link">
+    template.datasource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templatecustom" class="md-nav__link">
+    template.custom
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templatetext" class="md-nav__link">
+    template.text
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templateadhoc" class="md-nav__link">
+    template.adhoc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#textnew" class="md-nav__link">
+    text.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timepickernew" class="md-nav__link">
+    timepicker.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformationnew" class="md-nav__link">
+    transformation.new
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#alertconditionnew" class="md-nav__link">
+    alertCondition.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alertlistnew" class="md-nav__link">
+    alertlist.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annotationdatasource" class="md-nav__link">
+    annotation.datasource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bargaugepanelnew" class="md-nav__link">
+    barGaugePanel.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloudmonitoringtarget" class="md-nav__link">
+    cloudmonitoring.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloudwatchtarget" class="md-nav__link">
+    cloudwatch.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboardnew" class="md-nav__link">
+    dashboard.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashlistnew" class="md-nav__link">
+    dashlist.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elasticsearchtarget" class="md-nav__link">
+    elasticsearch.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gaugepanelnew" class="md-nav__link">
+    gaugePanel.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grafana" class="md-nav__link">
+    grafana
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphpanelnew" class="md-nav__link">
+    graphPanel.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphitetarget" class="md-nav__link">
+    graphite.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heatmappanelnew" class="md-nav__link">
+    heatmapPanel.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#influxdbtarget" class="md-nav__link">
+    influxdb.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkdashboards" class="md-nav__link">
+    link.dashboards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logpanelnew" class="md-nav__link">
+    logPanel.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lokitarget" class="md-nav__link">
+    loki.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#piechartpanelnew" class="md-nav__link">
+    pieChartPanel.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pluginlistnew" class="md-nav__link">
+    pluginlist.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prometheustarget" class="md-nav__link">
+    prometheus.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rownew" class="md-nav__link">
+    row.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#singlestatnew" class="md-nav__link">
+    singlestat.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sqltarget" class="md-nav__link">
+    sql.target
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statpanelnew" class="md-nav__link">
+    statPanel.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tablenew" class="md-nav__link">
+    table.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templatenew" class="md-nav__link">
+    template.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templateinterval" class="md-nav__link">
+    template.interval
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templatedatasource" class="md-nav__link">
+    template.datasource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templatecustom" class="md-nav__link">
+    template.custom
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templatetext" class="md-nav__link">
+    template.text
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templateadhoc" class="md-nav__link">
+    template.adhoc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#textnew" class="md-nav__link">
+    text.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timepickernew" class="md-nav__link">
+    timepicker.new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformationnew" class="md-nav__link">
+    transformation.new
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="api-docs">API Docs</h1>
+<p>Generated API documentation from JSDoc style comments.</p>
+<h2 id="alertconditionnew">alertCondition.new</h2>
+<p>Returns a new condition of alert of graph panel.
+Currently the only condition type that exists is a Query condition
+that allows to specify a query letter, time range and an aggregation function.</p>
+<p>@params</p>
+<ul>
+<li><strong>evaluatorParams</strong>: Value of threshold</li>
+<li><strong>evaluatorType</strong>: Type of threshold</li>
+<li><strong>operatorType</strong>: Operator between conditions</li>
+<li><strong>queryRefId</strong>: The letter defines what query to execute from the Metrics tab</li>
+<li><strong>queryTimeEnd</strong>: End of time range</li>
+<li><strong>queryTimeStart</strong>: Begging of time range</li>
+<li><strong>reducerParams</strong>: Params of an aggregation function</li>
+<li><strong>reducerType</strong>: Name of an aggregation function</li>
+</ul>
+<p>@return A json that represents a condition of alert</p>
+<h2 id="alertlistnew">alertlist.new</h2>
+<p>Creates an <a href="https://grafana.com/docs/grafana/latest/panels/visualizations/alert-list-panel/">Alert list panel</a></p>
+<p>@params</p>
+<ul>
+<li><strong>datasource</strong>: (optional)</li>
+<li><strong>description</strong>: (optional)</li>
+<li><strong>limit</strong>: (default <code>10</code>) Sets the maximum number of alerts to list.</li>
+<li><strong>onlyAlertsOnDashboard</strong>: (optional) Shows alerts only from the dashboard the alert list is in</li>
+<li><strong>show</strong>: (default <code>'current'</code>) Whether the panel should display the current alert state or recent alert state changes.</li>
+<li><strong>sortOrder</strong>: (default <code>'1'</code>) '1': alerting, '2': no_data, '3': pending, '4': ok, '5': paused</li>
+<li><strong>span</strong>: (optional)</li>
+<li><strong>stateFilter</strong>: (optional)</li>
+<li><strong>title</strong>: (default <code>''</code>)</li>
+<li><strong>transparent</strong>: (optional) Whether to display the panel without a background</li>
+</ul>
+<h2 id="annotationdatasource">annotation.datasource</h2>
+<h2 id="bargaugepanelnew">barGaugePanel.new</h2>
+<p>Create a <a href="https://grafana.com/docs/grafana/latest/panels/visualizations/bar-gauge-panel/">bar gauge panel</a>,</p>
+<p>@params</p>
+<ul>
+<li><strong>datasource</strong>: (optional) Panel datasource.</li>
+<li><strong>description</strong>: (optional) Panel description.</li>
+<li><strong>thresholds</strong>: (optional) An array of threashold values.</li>
+<li><strong>title</strong>: Panel title.</li>
+<li><strong>unit</strong>: (optional) The unit of the data.</li>
+</ul>
+<p>@methods</p>
+<ul>
+<li><strong>addTarget(target)</strong>: Adds a target object.</li>
+<li><strong>addTargets(targets)</strong>: Adds an array of targets.</li>
+</ul>
+<h2 id="cloudmonitoringtarget">cloudmonitoring.target</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/datasources/cloudmonitoring/">Google Cloud Monitoring target</a></p>
+<p>@params</p>
+<ul>
+<li><strong>alias</strong>: (optional)</li>
+<li><strong>crossSeriesReducer</strong>: (default 'REDUCE_MAX')</li>
+<li><strong>filters</strong>: (optional)</li>
+<li><strong>groupBys</strong>: (optional)</li>
+<li><strong>metric</strong>: </li>
+<li><strong>metricKind</strong>: (default 'CUMULATIVE')</li>
+<li><strong>perSeriesAligner</strong>: (default 'ALIGN_DELTA')</li>
+<li><strong>period</strong>: (default: <code>'cloud-monitoring-auto'</code>)</li>
+<li><strong>project</strong>: </li>
+<li><strong>unit</strong>: (optional)</li>
+<li><strong>valueType</strong>: (default 'INT64')</li>
+</ul>
+<p>@return Panel target</p>
+<h2 id="cloudwatchtarget">cloudwatch.target</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/features/datasources/cloudwatch/">CloudWatch target</a></p>
+<p>@params</p>
+<ul>
+<li><strong>alias</strong>: (optional)</li>
+<li><strong>datasource</strong>: (optional)</li>
+<li><strong>dimensions</strong>: (optional)</li>
+<li><strong>expression</strong>: (optional)</li>
+<li><strong>hide</strong>: (optional)</li>
+<li><strong>highResolution</strong>: (default: <code>false</code>)</li>
+<li><strong>id</strong>: (optional)</li>
+<li><strong>metric</strong>: </li>
+<li><strong>namespace</strong>: </li>
+<li><strong>period</strong>: (default: <code>'1m'</code>)</li>
+<li><strong>region</strong>: </li>
+<li><strong>statistic</strong>: (default: <code>'Average'</code>)</li>
+</ul>
+<p>@return Panel target</p>
+<h2 id="dashboardnew">dashboard.new</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/features/dashboard/dashboards/">dashboard</a></p>
+<p>@params</p>
+<ul>
+<li><strong>description</strong>: (optional)</li>
+<li><strong>editable</strong>: (default: <code>false</code>) Whether the dashboard is editable via Grafana UI.</li>
+<li><strong>graphTooltip</strong>: (default: <code>'default'</code>) <code>'default'</code> : no shared crosshair or tooltip (0), <code>'shared_crosshair'</code>: shared crosshair (1), <code>'shared_tooltip'</code>: shared crosshair AND shared tooltip (2)</li>
+<li><strong>hideControls</strong>: (default: <code>false</code>)</li>
+<li><strong>refresh</strong>: (default: <code>''</code>) Auto-refresh interval, e.g. <code>'30s'</code></li>
+<li><strong>schemaVersion</strong>: (default: <code>14</code>) Version of the Grafana JSON schema, incremented each time an update brings changes. <code>26</code> for Grafana 7.1.5, <code>22</code> for Grafana 6.7.4, <code>16</code> for Grafana 5.4.5, <code>14</code> for Grafana 4.6.3. etc.</li>
+<li><strong>style</strong>: (default: <code>'dark'</code>) Theme of dashboard, <code>'dark'</code> or <code>'light'</code></li>
+<li><strong>tags</strong>: (optional) Array of tags associated to the dashboard, e.g.<code>['tag1','tag2']</code></li>
+<li><strong>time_from</strong>: (default: <code>'now-6h'</code>)</li>
+<li><strong>time_to</strong>: (default: <code>'now'</code>)</li>
+<li><strong>timepicker</strong>: (optional) See timepicker API</li>
+<li><strong>timezone</strong>: (default: <code>'browser'</code>) Timezone of the dashboard, <code>'utc'</code> or <code>'browser'</code></li>
+<li><strong>title</strong>: The title of the dashboard</li>
+<li><strong>uid</strong>: (default: <code>''</code>) Unique dashboard identifier as a string (8-40), that can be chosen by users. Used to identify a dashboard to update when using Grafana REST API.</li>
+</ul>
+<p>@methods</p>
+<ul>
+<li><strong>addAnnotation(annotation)</strong>: Add an <a href="https://grafana.com/docs/grafana/latest/dashboards/annotations/">annotation</a></li>
+<li><strong>addInput(name,</strong>: label, type, pluginId, pluginName, description, value)</li>
+<li><strong>addLink(link)</strong>: Adds a <a href="https://grafana.com/docs/grafana/latest/linking/dashboard-links/">dashboard link</a></li>
+<li><strong>addLinks(dashboardLink)</strong>: Adds an array of <a href="https://grafana.com/docs/grafana/latest/linking/dashboard-links/">dashboard links</a></li>
+<li><strong>addPanel(panel,gridPos)</strong>: Appends a panel, with an optional grid position in grid coordinates, e.g. <code>gridPos={'x':0, 'y':0, 'w':12, 'h': 9}</code></li>
+<li><strong>addPanels(panels)</strong>: Appends an array of panels</li>
+<li><strong>addRequired(type,</strong>: name, id, version)</li>
+<li><strong>addRow(row)</strong>: Adds a row. This is the legacy row concept from Grafana &lt; 5, when rows were needed for layout. Rows should now be added via <code>addPanel</code>.</li>
+<li><strong>addTemplate(template)</strong>: Add a template variable</li>
+<li><strong>addTemplates(templates)</strong>: Adds an array of template variables</li>
+</ul>
+<h2 id="dashlistnew">dashlist.new</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/panels/visualizations/dashboard-list-panel/">dashlist panel</a>.
+It requires the dashlist panel plugin in grafana, which is built-in.</p>
+<p>@params</p>
+<ul>
+<li><strong>description</strong>: (optional) Description of the panel</li>
+<li><strong>headings</strong>: (default <code>true</code>) Chosen list selection(starred, recently Viewed, search) is shown as a heading</li>
+<li><strong>limit</strong>: (default <code>10</code>) Set maximum items in a list</li>
+<li><strong>query</strong>: (optional) Query to search by</li>
+<li><strong>recent</strong>: (default <code>true</code>) Displays recently viewed dashboards</li>
+<li><strong>search</strong>: (default <code>false</code>) Description of the panel</li>
+<li><strong>starred</strong>: (default <code>false</code>) Displays starred dashboards</li>
+<li><strong>tags</strong>: (optional) Array of tag(s) to search by</li>
+<li><strong>title</strong>: The title of the dashlist panel.</li>
+</ul>
+<p>@return A json that represents a dashlist panel</p>
+<h2 id="elasticsearchtarget">elasticsearch.target</h2>
+<p>Creates an <a href="https://grafana.com/docs/grafana/latest/features/datasources/elasticsearch/">Elasticsearch target</a></p>
+<p>@params</p>
+<ul>
+<li><strong>alias</strong>: (optional)</li>
+<li><strong>bucketAggs</strong>: (optional)</li>
+<li><strong>datasource</strong>: (optional)</li>
+<li><strong>id</strong>: (optional)</li>
+<li><strong>metrics</strong>: (optional)</li>
+<li><strong>query</strong>: </li>
+<li><strong>timeField</strong>: </li>
+</ul>
+<h2 id="gaugepanelnew">gaugePanel.new</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/panels/visualizations/gauge-panel/">gauge panel</a>.</p>
+<p>@params</p>
+<ul>
+<li><strong>allValues</strong>: (default <code>false</code>) Show all values instead of reducing to one.</li>
+<li><strong>datasource</strong>: (optional) Panel datasource.</li>
+<li><strong>decimals</strong>: Number of decimal places to show.</li>
+<li><strong>description</strong>: (optional) Panel description.</li>
+<li><strong>displayName</strong>: Change the field or series name.</li>
+<li><strong>fields</strong>: (default <code>''</code>) Fields that should be included in the panel.</li>
+<li><strong>max</strong>: (optional) Leave empty to calculate based on all values.</li>
+<li><strong>min</strong>: (optional) Leave empty to calculate based on all values.</li>
+<li><strong>noValue</strong>: (optional) What to show when there is no value.</li>
+<li><strong>pluginVersion</strong>: (default <code>'7'</code>) Plugin version the panel should be modeled for. This has been tested with the default, '7', and '6.7'.</li>
+<li><strong>reducerFunction</strong>: (default <code>'mean'</code>) Function to use to reduce values to when using single value.</li>
+<li><strong>repeat</strong>: (optional) Name of variable that should be used to repeat this panel.</li>
+<li><strong>repeatDirection</strong>: (default <code>'h'</code>) 'h' for horizontal or 'v' for vertical.</li>
+<li><strong>repeatMaxPerRow</strong>: (optional) Maximum panels per row in repeat mode.</li>
+<li><strong>showThresholdLabels</strong>: (default <code>false</code>) Render the threshold values around the gauge bar.</li>
+<li><strong>showThresholdMarkers</strong>: (default <code>true</code>) Render the thresholds as an outer bar.</li>
+<li><strong>thresholdsMode</strong>: (default <code>'absolute'</code>) 'absolute' or 'percentage'.</li>
+<li><strong>timeFrom</strong>: (optional)</li>
+<li><strong>title</strong>: Panel title.</li>
+<li><strong>transparent</strong>: (default <code>false</code>) Whether to display the panel without a background.</li>
+<li><strong>unit</strong>: (default <code>'percent'</code>) Panel unit field option.</li>
+<li><strong>valueLimit</strong>: (optional) Limit of values in all values mode.</li>
+</ul>
+<p>@methods</p>
+<ul>
+<li><strong>addDataLink(link)</strong>: Adds a data link.</li>
+<li><strong>addDataLinks(links)</strong>: Adds an array of data links.</li>
+<li><strong>addLink(link)</strong>: Adds a <a href="https://grafana.com/docs/grafana/latest/linking/panel-links/">panel link</a>. Argument format: <code>{ title: 'Link Title', url: 'https://...', targetBlank: true }</code>.</li>
+<li><strong>addLinks(links)</strong>: Adds an array of links.</li>
+<li><strong>addMapping(mapping)</strong>: Adds a value mapping.</li>
+<li><strong>addMappings(mappings)</strong>: Adds an array of value mappings.</li>
+<li><strong>addTarget(target)</strong>: Adds a target object.</li>
+<li><strong>addTargets(targets)</strong>: Adds an array of targets.</li>
+<li><strong>addThreshold(step)</strong>: Adds a threshold step. Argument format: <code>{ color: 'green', value: 0 }</code>.</li>
+<li><strong>addThresholds(steps)</strong>: Adds an array of threshold steps.</li>
+</ul>
+<h2 id="grafana">grafana</h2>
+<h2 id="graphpanelnew">graphPanel.new</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/panels/visualizations/graph-panel/">graph panel</a>.
+It requires the graph panel plugin in grafana, which is built-in.</p>
+<p>@params</p>
+<ul>
+<li><strong>aliasColors</strong>: (optional) Define color mappings for graphs</li>
+<li><strong>bars</strong>: (default <code>false</code>) Display bars</li>
+<li><strong>dashes</strong>: (default <code>false</code>) Display line as dashes</li>
+<li><strong>datasource</strong>: (optional) Datasource</li>
+<li><strong>decimals</strong>: (optional) Override automatic decimal precision for legend and tooltip. If null, not added to the json output.</li>
+<li><strong>decimalsY1</strong>: (optional) Override automatic decimal precision for the first Y axis. If null, use decimals parameter.</li>
+<li><strong>decimalsY2</strong>: (optional) Override automatic decimal precision for the second Y axis. If null, use decimals parameter.</li>
+<li><strong>description</strong>: (optional) The description of the panel</li>
+<li><strong>fill</strong>: (default <code>1</code>) , integer from 0 to 10</li>
+<li><strong>fillGradient</strong>: (default <code>0</code>) , integer from 0 to 10</li>
+<li><strong>format</strong>: (default <code>short</code>) Unit of the Y axes</li>
+<li><strong>formatY1</strong>: (optional) Unit of the first Y axis</li>
+<li><strong>formatY2</strong>: (optional) Unit of the second Y axis</li>
+<li><strong>interval</strong>: (defaut: null) A lower limit for the interval.</li>
+<li><strong>labelY1</strong>: (optional) Label of the first Y axis</li>
+<li><strong>labelY2</strong>: (optional) Label of the second Y axis</li>
+<li><strong>legend_alignAsTable</strong>: (default <code>false</code>) Show legend as table</li>
+<li><strong>legend_avg</strong>: (default <code>false</code>) Show average in legend</li>
+<li><strong>legend_current</strong>: (default <code>false</code>) Show current in legend</li>
+<li><strong>legend_max</strong>: (default <code>false</code>) Show max in legend</li>
+<li><strong>legend_min</strong>: (default <code>false</code>) Show min in legend</li>
+<li><strong>legend_rightSide</strong>: (default <code>false</code>) Show legend to the right</li>
+<li><strong>legend_show</strong>: (default <code>true</code>) Show legend</li>
+<li><strong>legend_sideWidth</strong>: (optional) Legend width</li>
+<li><strong>legend_sort</strong>: (optional) Sort order of legend</li>
+<li><strong>legend_sortDesc</strong>: (optional) Sort legend descending</li>
+<li><strong>legend_total</strong>: (default <code>false</code>) Show total in legend</li>
+<li><strong>legend_values</strong>: (default <code>false</code>) Show values in legend</li>
+<li><strong>lines</strong>: (default <code>true</code>) Display lines</li>
+<li><strong>linewidth</strong>: (default <code>1</code>) Line Width, integer from 0 to 10</li>
+<li><strong>logBase1Y</strong>: (default <code>1</code>) Value of logarithm base of the first Y axis</li>
+<li><strong>logBase2Y</strong>: (default <code>1</code>) Value of logarithm base of the second Y axis</li>
+<li><strong>max</strong>: (optional) Max of the Y axes</li>
+<li><strong>maxDataPoints</strong>: (optional) If the data source supports it, sets the maximum number of data points for each series returned.</li>
+<li><strong>min</strong>: (optional) Min of the Y axes</li>
+<li><strong>min_span</strong>: (optional) Min span</li>
+<li><strong>percentage</strong>: (defaut: false) show as percentages</li>
+<li><strong>pointradius</strong>: (default <code>5</code>) Radius of the points, allowed values are 0.5 or [1 ... 10] with step 1</li>
+<li><strong>points</strong>: (default <code>false</code>) Display points</li>
+<li><strong>repeat</strong>: (optional) Name of variable that should be used to repeat this panel.</li>
+<li><strong>repeatDirection</strong>: (default <code>'h'</code>) 'h' for horizontal or 'v' for vertical.</li>
+<li><strong>shared_tooltip</strong>: (default <code>true</code>) Allow to group or spit tooltips on mouseover within a chart</li>
+<li><strong>span</strong>: (optional) Width of the panel</li>
+<li><strong>stack</strong>: (default <code>false</code>) Whether to stack values</li>
+<li><strong>staircase</strong>: (default <code>false</code>) Display line as staircase</li>
+<li><strong>thresholds</strong>: (optional) An array of graph thresholds</li>
+<li><strong>title</strong>: The title of the graph panel.</li>
+<li><strong>transparent</strong>: (default <code>false</code>) Whether to display the panel without a background.</li>
+<li><strong>value_type</strong>: (default <code>'individual'</code>) Type of tooltip value</li>
+<li><strong>x_axis_buckets</strong>: (optional) Restricts the x axis to this amount of buckets</li>
+<li><strong>x_axis_max</strong>: (optional) Restricts the x axis to display up to this value if supplied</li>
+<li><strong>x_axis_min</strong>: (optional) Restricts the x axis to display from this value if supplied</li>
+<li><strong>x_axis_mode</strong>: (default <code>'time'</code>) X axis mode, one of [time, series, histogram]</li>
+<li><strong>x_axis_values</strong>: (default <code>'total'</code>) Chosen value of series, one of [avg, min, max, total, count]</li>
+</ul>
+<p>@methods</p>
+<ul>
+<li><strong>addAlert(alert)</strong>: Adds an alert</li>
+<li><strong>addLink(link)</strong>: Adds a <a href="https://grafana.com/docs/grafana/latest/linking/panel-links/">panel link</a></li>
+<li><strong>addLinks(links)</strong>: Adds an array of links.</li>
+<li><strong>addSeriesOverride(override)</strong>: </li>
+<li><strong>addTarget(target)</strong>: Adds a target object.</li>
+<li><strong>addTargets(targets)</strong>: Adds an array of targets.</li>
+<li><strong>addYaxis(format,min,max,label,show,logBase,decimals)</strong>: Adds a Y axis to the graph</li>
+</ul>
+<h2 id="graphitetarget">graphite.target</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/features/datasources/graphite/">Graphite target</a></p>
+<p>@params</p>
+<ul>
+<li><strong>datasource</strong>: (optional) Datasource.</li>
+<li><strong>hide</strong>: (default <code>false</code>) Disable query on graph.</li>
+<li><strong>target</strong>: Graphite Query. Nested queries are possible by adding the query reference (refId).</li>
+<li><strong>targetFull</strong>: (optional) Expanding the @target. Used in nested queries.</li>
+<li><strong>textEditor</strong>: (default <code>false</code>) Enable raw query mode.</li>
+</ul>
+<p>@return Panel target</p>
+<h2 id="heatmappanelnew">heatmapPanel.new</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/panels/visualizations/heatmap/">heatmap panel</a>.
+Requires the heatmap panel plugin in Grafana, which is built-in.</p>
+<p>@params</p>
+<ul>
+<li><strong>cards_cardPadding</strong>: (optional) How much padding to put between bucket cards</li>
+<li><strong>cards_cardRound</strong>: (optional) How much rounding should be applied to the bucket card shape</li>
+<li><strong>color_cardColor</strong>: (default <code>'#b4ff00'</code>) Hex value of color used when color_colorScheme is 'opacity'</li>
+<li><strong>color_colorScale</strong>: (default <code>'sqrt'</code>) How to scale the color range, 'linear' or 'sqrt'</li>
+<li><strong>color_colorScheme</strong>: (default <code>'interpolateOranges'</code>) TODO: document</li>
+<li><strong>color_exponent</strong>: (default <code>0.5</code>) TODO: document</li>
+<li><strong>color_max</strong>: (optional) The value for the end of the color range</li>
+<li><strong>color_min</strong>: (optional) The value for the beginning of the color range</li>
+<li><strong>color_mode</strong>: (default <code>'spectrum'</code>) How to display difference in frequency with color</li>
+<li><strong>dataFormat</strong>: (default <code>'timeseries'</code>) How to format the data</li>
+<li><strong>datasource</strong>: (optional) Datasource</li>
+<li><strong>description</strong>: (optional) Description of panel</li>
+<li><strong>hideZeroBuckets</strong>: (default <code>false</code>) Whether or not to hide empty buckets, default is false</li>
+<li><strong>highlightCards</strong>: (default <code>true</code>) TODO: document</li>
+<li><strong>legend_show</strong>: (default <code>false</code>) Show legend</li>
+<li><strong>maxDataPoints</strong>: (optional) The maximum data points per series. Used directly by some data sources and used in calculation of auto interval. With streaming data this value is used for the rolling buffer.</li>
+<li><strong>minSpan</strong>: (optional) Minimum span of the panel when repeated on a template variable</li>
+<li><strong>min_span</strong>: (optional) Min span</li>
+<li><strong>repeat</strong>: (optional) Variable used to repeat the heatmap panel</li>
+<li><strong>repeatDirection</strong>: (optional) Which direction to repeat the panel, 'h' for horizontal and 'v' for vertically</li>
+<li><strong>span</strong>: (optional) Width of the panel</li>
+<li><strong>title</strong>: The title of the heatmap panel</li>
+<li><strong>tooltipDecimals</strong>: (optional) The number of decimal places to display in the tooltip</li>
+<li><strong>tooltip_show</strong>: (default <code>true</code>) Whether or not to display a tooltip when hovering over the heatmap</li>
+<li><strong>tooltip_showHistogram</strong>: (default <code>false</code>) Whether or not to display a histogram in the tooltip</li>
+<li><strong>xAxis_show</strong>: (default <code>true</code>) Whether or not to show the X axis, default true</li>
+<li><strong>xBucketNumber</strong>: (optional) Number of buckets for the X axis</li>
+<li><strong>xBucketSize</strong>: (optional) Size of X axis buckets. Number or interval(10s, 15h, etc.) Has priority over xBucketNumber</li>
+<li><strong>yAxis_decimals</strong>: (optional) Override automatic decimal precision for the Y axis</li>
+<li><strong>yAxis_format</strong>: (default <code>'short'</code>) Unit of the Y axis</li>
+<li><strong>yAxis_logBase</strong>: (default <code>1</code>) Only if dataFormat is 'timeseries'</li>
+<li><strong>yAxis_max</strong>: (optional) Only if dataFormat is 'timeseries', max of the Y axis</li>
+<li><strong>yAxis_min</strong>: (optional) Only if dataFormat is 'timeseries', min of the Y axis</li>
+<li><strong>yAxis_show</strong>: (default <code>true</code>) Whether or not to show the Y axis</li>
+<li><strong>yAxis_splitFactor</strong>: (optional) TODO: document</li>
+<li><strong>yBucketBound</strong>: (default <code>'auto'</code>) Which bound ('lower' or 'upper') of the bucket to use</li>
+<li><strong>yBucketNumber</strong>: (optional) Number of buckets for the Y axis</li>
+<li><strong>yBucketSize</strong>: (optional) Size of Y axis buckets. Has priority over yBucketNumber</li>
+</ul>
+<p>@methods</p>
+<ul>
+<li><strong>addTarget(target)</strong>: Adds a target object.</li>
+<li><strong>addTargets(targets)</strong>: Adds an array of targets.</li>
+</ul>
+<h2 id="influxdbtarget">influxdb.target</h2>
+<p>Creates an <a href="https://grafana.com/docs/grafana/latest/features/datasources/influxdb/">InfluxDB target</a></p>
+<p>@params</p>
+<ul>
+<li><strong>alias</strong>: (optional) 'Alias By' pattern</li>
+<li><strong>datasource</strong>: (optional) Datasource</li>
+<li><strong>fill</strong>: (default: <code>'none'</code>) 'Group by' missing values fill mode (works only with 'Group by time()')</li>
+<li><strong>group_tags</strong>: (optional) 'Group by' tags list</li>
+<li><strong>group_time</strong>: (default: <code>'$__interval'</code>) 'Group by' time condition (if set to null, do not groups by time)</li>
+<li><strong>hide</strong>: (optional) Disable query on graph</li>
+<li><strong>measurement</strong>: (optional) Tagged query 'From' measurement</li>
+<li><strong>policy</strong>: (default: <code>'default'</code>) Tagged query 'From' policy</li>
+<li><strong>query</strong>: Raw InfluxQL statement</li>
+<li><strong>rawQuery</strong>: (optional) Enable/disable raw query mode</li>
+<li><strong>resultFormat</strong>: (default: <code>'time_series'</code>) Format results as 'Time series' or 'Table'</li>
+</ul>
+<p>@return Panel target</p>
+<h2 id="linkdashboards">link.dashboards</h2>
+<p>Creates <a href="https://grafana.com/docs/grafana/latest/linking/linking-overview/">links</a> to navigate to other dashboards.</p>
+<p>@params</p>
+<ul>
+<li><strong>asDropdown</strong>: (default: <code>true</code>) Whether to use a dropdown (with an optional title). If <code>false</code>, displays the dashboard links side by side across the top of dashboard.</li>
+<li><strong>icon</strong>: (default: <code>'external link'</code>) Icon displayed with the link.</li>
+<li><strong>includeVars</strong>: (default: <code>false</code>) Whether to include template variables currently used as query parameters in the link. Any matching templates in the linked dashboard are set to the values from the link</li>
+<li><strong>keepTime</strong>: (default: <code>false</code>) Whether to include the current dashboard time range in the link (e.g. from=now-3h&amp;to=now)</li>
+<li><strong>tags</strong>: Limits the linked dashboards to only the ones with the corresponding tags. Otherwise, Grafana includes links to all other dashboards.</li>
+<li><strong>targetBlank</strong>: (default: <code>false</code>) Whether the link will open in a new window.</li>
+<li><strong>title</strong>: Human-readable label for the link.</li>
+<li><strong>type</strong>: (default: <code>'dashboards'</code>)</li>
+<li><strong>url</strong>: (default: <code>''</code>) URL of the link</li>
+</ul>
+<h2 id="logpanelnew">logPanel.new</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/panels/visualizations/logs-panel/">log panel</a>.
+It requires the log panel plugin in grafana, which is built-in.</p>
+<p>@params</p>
+<ul>
+<li><strong>datasource</strong>: (optional) Datasource</li>
+<li><strong>span</strong>: (optional) Width of the panel</li>
+<li><strong>title</strong>: (default <code>''</code>) The title of the log panel.</li>
+</ul>
+<p>@methods</p>
+<ul>
+<li><strong>addTarget(target)</strong>: Adds a target object</li>
+<li><strong>addTargets(targets)</strong>: Adds an array of targets</li>
+</ul>
+<h2 id="lokitarget">loki.target</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/features/datasources/loki/">Loki target</a></p>
+<p>@params</p>
+<ul>
+<li><strong>expr</strong>: </li>
+<li><strong>hide</strong>: (optional) Disable query on graph.</li>
+<li><strong>legendFormat</strong>: (optional) Defines the legend. Defaults to ''.</li>
+</ul>
+<h2 id="piechartpanelnew">pieChartPanel.new</h2>
+<p>Creates a pie chart panel.
+It requires the <a href="https://grafana.com/grafana/plugins/grafana-piechart-panel">pie chart panel plugin in grafana</a>,
+which needs to be explicitly installed.</p>
+<p>@params</p>
+<ul>
+<li><strong>aliasColors</strong>: (optional) Define color mappings</li>
+<li><strong>datasource</strong>: (optional) Datasource</li>
+<li><strong>description</strong>: (default <code>''</code>) Description of the panel</li>
+<li><strong>legendType</strong>: (default <code>'Right side'</code>) Type of legend (one of 'Right side', 'Under graph' or 'On graph')</li>
+<li><strong>maxPerRow</strong>: (optional) Number of panels to display when repeated. Used in combination with repeat.</li>
+<li><strong>min_span</strong>: (optional) Min span</li>
+<li><strong>pieType</strong>: (default <code>'pie'</code>) Type of pie chart (one of pie or donut)</li>
+<li><strong>repeat</strong>: (optional) Variable used to repeat the pie chart</li>
+<li><strong>repeatDirection</strong>: (optional) Which direction to repeat the panel, 'h' for horizontal and 'v' for vertical</li>
+<li><strong>showLegend</strong>: (default <code>true</code>) Show legend</li>
+<li><strong>showLegendPercentage</strong>: (default <code>true</code>) Show percentage values in the legend</li>
+<li><strong>span</strong>: (optional) Width of the panel</li>
+<li><strong>title</strong>: The title of the pie chart panel.</li>
+<li><strong>valueName</strong>: (default `'current') Type of tooltip value</li>
+</ul>
+<p>@methods</p>
+<ul>
+<li><strong>addTarget(target)</strong>: Adds a target object.</li>
+</ul>
+<p>@return A json that represents a pie chart panel</p>
+<h2 id="pluginlistnew">pluginlist.new</h2>
+<p>Returns a new pluginlist panel that can be added in a row.
+It requires the pluginlist panel plugin in grafana, which is built-in.</p>
+<p>@params</p>
+<ul>
+<li><strong>description</strong>: (optional) Description of the panel</li>
+<li><strong>limit</strong>: (optional) Set maximum items in a list</li>
+<li><strong>title</strong>: The title of the pluginlist panel.</li>
+</ul>
+<p>@return A json that represents a pluginlist panel</p>
+<h2 id="prometheustarget">prometheus.target</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/features/datasources/prometheus/">Prometheus target</a>
+to be added to panels.</p>
+<p>@params</p>
+<ul>
+<li><strong>datasource</strong>: (optional) Name of the Prometheus datasource. Leave by default otherwise.</li>
+<li><strong>expr</strong>: PromQL query to be exercised against Prometheus. Checkout <a href="https://prometheus.io/docs/prometheus/latest/querying/basics/">Prometheus documentation</a>.</li>
+<li><strong>format</strong>: (default <code>'time_series'</code>) Switch between <code>'table'</code>, <code>'time_series'</code> or <code>'heatmap'</code>. Table will only work in the Table panel. Heatmap is suitable for displaying metrics of the Histogram type on a Heatmap panel. Under the hood, it converts cumulative histograms to regular ones and sorts series by the bucket bound.</li>
+<li><strong>hide</strong>: (optional) Set to <code>true</code> to hide the target from the panel.</li>
+<li><strong>instant</strong>: (optional) Perform an "instant" query, to return only the latest value that Prometheus has scraped for the requested time series. Instant queries return results much faster than normal range queries. Use them to look up label sets.</li>
+<li><strong>interval</strong>: (optional) Time span used to aggregate or group data points by time. By default Grafana uses an automatic interval calculated based on the width of the graph.</li>
+<li><strong>intervalFactor</strong>: (default <code>2</code>)</li>
+<li><strong>legendFormat</strong>: (default <code>''</code>) Controls the name of the time series, using name or pattern. For example <code>{{hostname}}</code> is replaced with the label value for the label <code>hostname</code>.</li>
+</ul>
+<p>@return A Prometheus target to be added to panels.</p>
+<h2 id="rownew">row.new</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/features/dashboard/dashboards/#rows">row</a>.
+Rows are logical dividers within a dashboard and used to group panels together.</p>
+<p>@params</p>
+<ul>
+<li><strong>collapse</strong>: (default <code>false</code>) The initial state of the row when opening the dashboard. Panels in a collapsed row are not load until the row is expanded.</li>
+<li><strong>repeat</strong>: (optional) Name of variable that should be used to repeat this row. It is recommended to use the variable in the row title as well.</li>
+<li><strong>showTitle</strong>: (default <code>true</code> if title is set) Whether to show the row title</li>
+<li><strong>title</strong>: The title of the row.</li>
+</ul>
+<p>@methods</p>
+<ul>
+<li><strong>addPanel(panel,gridPos)</strong>: Appends a nested panel, with an optional grid position in grid coordinates, e.g. <code>gridPos={'x':0, 'y':0, 'w':12, 'h': 9}</code></li>
+<li><strong>addPanels(panels)</strong>: Appends an array of nested panels</li>
+</ul>
+<h2 id="singlestatnew">singlestat.new</h2>
+<p>Creates a singlestat panel.</p>
+<p>@params</p>
+<ul>
+<li><strong>colorBackground</strong>: (default <code>false</code>)</li>
+<li><strong>colorValue</strong>: (default <code>false</code>)</li>
+<li><strong>colors</strong>: (default <code>['#299c46','rgba(237, 129, 40, 0.89)','#d44a3a']</code>)</li>
+<li><strong>datasource</strong>: (optional)</li>
+<li><strong>decimals</strong>: (optional)</li>
+<li><strong>description</strong>: (default <code>''</code>)</li>
+<li><strong>format</strong>: (default <code>'none'</code>) Unit</li>
+<li><strong>gaugeMaxValue</strong>: (default <code>100</code>)</li>
+<li><strong>gaugeMinValue</strong>: (default <code>0</code>)</li>
+<li><strong>gaugeShow</strong>: (default <code>false</code>)</li>
+<li><strong>gaugeThresholdLabels</strong>: (default <code>false</code>)</li>
+<li><strong>gaugeThresholdMarkers</strong>: (default <code>true</code>)</li>
+<li><strong>height</strong>: (optional)</li>
+<li><strong>interval</strong>: (optional)</li>
+<li><strong>links</strong>: (optional)</li>
+<li><strong>mappingType</strong>: (default <code>1</code>)</li>
+<li><strong>maxDataPoints</strong>: (default <code>100</code>)</li>
+<li><strong>maxPerRow</strong>: (optional)</li>
+<li><strong>min_span</strong>: (optional)</li>
+<li><strong>postfix</strong>: (default <code>''</code>)</li>
+<li><strong>postfixFontSize</strong>: (default <code>'50%'</code>)</li>
+<li><strong>prefix</strong>: (default <code>''</code>)</li>
+<li><strong>prefixFontSize</strong>: (default <code>'50%'</code>)</li>
+<li><strong>rangeMaps</strong>: (default <code>{value: 'null',op: '=',text: 'N/A'}</code>)</li>
+<li><strong>repeat</strong>: (optional)</li>
+<li><strong>repeatDirection</strong>: (optional)</li>
+<li><strong>span</strong>: (optional)</li>
+<li><strong>sparklineFillColor</strong>: (default <code>'rgba(31, 118, 189, 0.18)'</code>)</li>
+<li><strong>sparklineFull</strong>: (default <code>false</code>)</li>
+<li><strong>sparklineLineColor</strong>: (default <code>'rgb(31, 120, 193)'</code>)</li>
+<li><strong>sparklineShow</strong>: (default <code>false</code>)</li>
+<li><strong>tableColumn</strong>: (default <code>''</code>)</li>
+<li><strong>thresholds</strong>: (default <code>''</code>)</li>
+<li><strong>timeFrom</strong>: (optional)</li>
+<li><strong>title</strong>: The title of the singlestat panel.</li>
+<li><strong>transparent</strong>: (optional)</li>
+<li><strong>valueFontSize</strong>: (default <code>'80%'</code>)</li>
+<li><strong>valueMaps</strong>: (default <code>{value: 'null',op: '=',text: 'N/A'}</code>)</li>
+<li><strong>valueName</strong>: (default <code>'avg'</code>)</li>
+</ul>
+<p>@methods</p>
+<ul>
+<li><strong>addTarget(target)</strong>: Adds a target object.</li>
+</ul>
+<h2 id="sqltarget">sql.target</h2>
+<p>Creates an SQL target.</p>
+<p>@params</p>
+<ul>
+<li><strong>alias</strong>: (optional)</li>
+<li><strong>datasource</strong>: (optional)</li>
+<li><strong>format</strong>: (default <code>'time_series'</code>)</li>
+<li><strong>rawSql</strong>: The SQL query</li>
+</ul>
+<h2 id="statpanelnew">statPanel.new</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/panels/visualizations/stat-panel/">stat panel</a>.</p>
+<p>@params</p>
+<ul>
+<li><strong>allValues</strong>: (default <code>false</code>) Show all values instead of reducing to one.</li>
+<li><strong>colorMode</strong>: (default <code>'value'</code>) 'value' or 'background'.</li>
+<li><strong>datasource</strong>: (optional) Panel datasource.</li>
+<li><strong>decimals</strong>: (optional) Number of decimal places to show.</li>
+<li><strong>description</strong>: (optional) Panel description.</li>
+<li><strong>displayName</strong>: (optional) Change the field or series name.</li>
+<li><strong>fields</strong>: (default <code>''</code>) Fields that should be included in the panel.</li>
+<li><strong>graphMode</strong>: (default <code>'area'</code>) 'none' or 'area' to enable sparkline mode.</li>
+<li><strong>justifyMode</strong>: (default <code>'auto'</code>) 'auto' or 'center'.</li>
+<li><strong>max</strong>: (optional) Leave empty to calculate based on all values.</li>
+<li><strong>maxPerRow</strong>: (optional) Maximum panels per row in repeat mode.</li>
+<li><strong>min</strong>: (optional) Leave empty to calculate based on all values.</li>
+<li><strong>noValue</strong>: (optional) What to show when there is no value.</li>
+<li><strong>orientation</strong>: (default <code>'auto'</code>) Stacking direction in case of multiple series or fields.</li>
+<li><strong>pluginVersion</strong>: (default <code>'7'</code>) Plugin version the panel should be modeled for. This has been tested with the default, '7', and '6.7'.</li>
+<li><strong>reducerFunction</strong>: (default <code>'mean'</code>) Function to use to reduce values to when using single value.</li>
+<li><strong>repeat</strong>: (optional) Name of variable that should be used to repeat this panel.</li>
+<li><strong>repeatDirection</strong>: (default <code>'h'</code>) 'h' for horizontal or 'v' for vertical.</li>
+<li><strong>thresholdsMode</strong>: (default <code>'absolute'</code>) 'absolute' or 'percentage'.</li>
+<li><strong>timeFrom</strong>: (optional) Override the relative time range.</li>
+<li><strong>title</strong>: Panel title.</li>
+<li><strong>transparent</strong>: (default <code>false</code>) Whether to display the panel without a background.</li>
+<li><strong>unit</strong>: (default <code>'none'</code>) Panel unit field option.</li>
+<li><strong>valueLimit</strong>: (optional) Limit of values in all values mode.</li>
+</ul>
+<p>@methods</p>
+<ul>
+<li><strong>addDataLink(link)</strong>: Adds a data link.</li>
+<li><strong>addDataLinks(links)</strong>: Adds an array of data links.</li>
+<li><strong>addLink(link)</strong>: Adds a <a href="https://grafana.com/docs/grafana/latest/linking/panel-links/">panel link</a>. Argument format: <code>{ title: 'Link Title', url: 'https://...', targetBlank: true }</code>.</li>
+<li><strong>addLinks(links)</strong>: Adds an array of links.</li>
+<li><strong>addMapping(mapping)</strong>: Adds a value mapping.</li>
+<li><strong>addMappings(mappings)</strong>: Adds an array of value mappings.</li>
+<li><strong>addTarget(target)</strong>: Adds a target object.</li>
+<li><strong>addTargets(targets)</strong>: Adds an array of targets.</li>
+<li><strong>addThreshold(step)</strong>: Adds a <a href="https://grafana.com/docs/grafana/latest/panels/thresholds/">threshold</a> step. Argument format: <code>{ color: 'green', value: 0 }</code>.</li>
+<li><strong>addThresholds(steps)</strong>: Adds an array of threshold steps.</li>
+</ul>
+<h2 id="tablenew">table.new</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/panels/visualizations/table-panel/">table panel</a> that can be added in a row.
+It requires the table panel plugin in grafana, which is built-in.</p>
+<p>@params</p>
+<ul>
+<li><strong>columns</strong>: (optional) Array of columns for the panel</li>
+<li><strong>datasource</strong>: (optional) Datasource</li>
+<li><strong>description</strong>: (optional) Description of the panel</li>
+<li><strong>height</strong>: (optional)  Height of the panel</li>
+<li><strong>links</strong>: (optional) Array of links for the panel.</li>
+<li><strong>min_span</strong>: (optional)  Min span</li>
+<li><strong>sort</strong>: (optional) Sorting instruction for the panel</li>
+<li><strong>span</strong>: (optional)  Width of the panel</li>
+<li><strong>styles</strong>: (optional) Array of styles for the panel</li>
+<li><strong>title</strong>: The title of the graph panel.</li>
+<li><strong>transform</strong>: (optional) Allow table manipulation to present data as desired</li>
+<li><strong>transparent</strong>: (default: 'false') Whether to display the panel without a background</li>
+</ul>
+<p>@methods</p>
+<ul>
+<li><strong>addColumn(field,</strong>: style) Adds a column</li>
+<li><strong>addLink(link)</strong>: Adds a link</li>
+<li><strong>addTarget(target)</strong>: Adds a target object</li>
+<li><strong>addTargets(targets)</strong>: Adds an array of targets</li>
+<li><strong>addTransformation(transformation)</strong>: Adds a transformation object</li>
+<li><strong>addTransformations(transformations)</strong>: Adds an array of transformations</li>
+<li><strong>hideColumn(field)</strong>: Hides a column</li>
+</ul>
+<p>@return A json that represents a table panel</p>
+<h2 id="templatenew">template.new</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/variables/#templates">template</a> that can be added to a dashboard.</p>
+<p>@params</p>
+<ul>
+<li><strong>allValues</strong>: (optional) Formatting for <a href="https://grafana.com/docs/grafana/latest/variables/formatting-multi-value-variables/#formatting-multi-value-variables">multi-value variables</a></li>
+<li><strong>current</strong>: (default <code>null</code>) Can be <code>null</code>, <code>'all'</code> for all, or any other custom text value.</li>
+<li><strong>datasource</strong>: Template <a href="https://grafana.com/docs/grafana/latest/variables/variable-types/add-data-source-variable/">datasource</a></li>
+<li><strong>hide</strong>: (default <code>''</code>) <code>''</code>: the variable dropdown displays the variable Name or Label value. <code>'label'</code>: the variable dropdown only displays the selected variable value and a down arrow. Any other value: no variable dropdown is displayed on the dashboard.</li>
+<li><strong>includeAll</strong>: (default <code>false</code>) Whether all value option is available or not.</li>
+<li><strong>label</strong>: (optional) Display name of the variable dropdown. If null, then the dropdown label will be the variable name.</li>
+<li><strong>multi</strong>: (default <code>false</code>) Whether multiple values can be selected or not from variable value list.</li>
+<li><strong>name</strong>: Name of variable.</li>
+<li><strong>query</strong>: <a href="https://grafana.com/docs/grafana/latest/variables/variable-types/add-query-variable/">Query expression</a> for the datasource.</li>
+<li><strong>refresh</strong>: (default <code>'never'</code>) <code>'never'</code>: variables queries are cached and values are not updated. This is fine if the values never change, but problematic if they are dynamic and change a lot. <code>'load'</code>: Queries the data source every time the dashboard loads. This slows down dashboard loading, because the variable query needs to be completed before dashboard can be initialized. <code>'time'</code>: Queries the data source when the dashboard time range changes. Only use this option if your variable options query contains a time range filter or is dependent on the dashboard time range.</li>
+<li><strong>regex</strong>: (default <code>''</code>) Regex expression to filter or capture specific parts of the names returned by your data source query. To see examples, refer to <a href="https://grafana.com/docs/grafana/latest/variables/filter-variables-with-regex/">Filter variables with regex</a>.</li>
+<li><strong>sort</strong>: (default <code>0</code>) <code>0</code>: Without Sort, <code>1</code>: Alphabetical (asc), <code>2</code>: Alphabetical (desc), <code>3</code>: Numerical (asc), <code>4</code>: Numerical (desc).</li>
+<li><strong>tagValuesQuery</strong>: (default <code>''</code>) Group values into <a href="https://grafana.com/docs/grafana/latest/variables/variable-value-tags/">selectable tags</a></li>
+</ul>
+<p>@return A <a href="https://grafana.com/docs/grafana/latest/variables/#templates">template</a></p>
+<h2 id="templateinterval">template.interval</h2>
+<p>Use an <a href="https://grafana.com/docs/grafana/latest/variables/variable-types/add-interval-variable/">interval variable</a> to represent time spans such as '1m', '1h', '1d'. You can think of them as a dashboard-wide "group by time" command. Interval variables change how the data is grouped in the visualization. You can also use the Auto Option to return a set number of data points per time span.
+You can use an interval variable as a parameter to group by time (for InfluxDB), date histogram interval (for Elasticsearch), or as a summarize function parameter (for Graphite).</p>
+<p>@params</p>
+<ul>
+<li><strong>auto_count</strong>: (default <code>300</code>) Valid only if <code>'auto'</code> is defined in query. Number of times the current time range will be divided to calculate the value, similar to the Max data points query option. For example, if the current visible time range is 30 minutes, then the auto interval groups the data into 30 one-minute increments. The default value is 30 steps.</li>
+<li><strong>auto_min</strong>: (default <code>'10s'</code>) Valid only if <code>'auto'</code> is defined in query. The minimum threshold below which the step count intervals will not divide the time. To continue the 30 minute example, if the minimum interval is set to <code>'2m'</code>, then Grafana would group the data into 15 two-minute increments.</li>
+<li><strong>current</strong>: Currently selected interval. Must be one of the values in the query. <code>'auto'</code> is allowed if defined in the query.</li>
+<li><strong>hide</strong>: (default <code>''</code>) <code>''</code>: the variable dropdown displays the variable Name or Label value. <code>'label'</code>: the variable dropdown only displays the selected variable value and a down arrow. Any other value: no variable dropdown is displayed on the dashboard.</li>
+<li><strong>label</strong>: (optional) Display name of the variable dropdown. If null, then the dropdown label will be the variable name.</li>
+<li><strong>name</strong>: Variable name</li>
+<li><strong>query</strong>: Comma separated values without spacing of intervals available for selection. Add <code>'auto'</code> in the query to turn on the Auto Option. Ex: <code>'auto,5m,10m,20m'</code>.</li>
+</ul>
+<p>@return A new interval variable for templating.</p>
+<h2 id="templatedatasource">template.datasource</h2>
+<p>Data <a href="https://grafana.com/docs/grafana/latest/variables/variable-types/add-data-source-variable/">source variables</a>
+allow you to quickly change the data source for an entire dashboard.
+They are useful if you have multiple instances of a data source, perhaps in different environments.</p>
+<p>@params</p>
+<ul>
+<li><strong>current</strong>: Ex: <code>'Prometheus'</code>.</li>
+<li><strong>hide</strong>: (default <code>''</code>) <code>''</code>: the variable dropdown displays the variable Name or Label value. <code>'label'</code>: the variable dropdown only displays the selected variable value and a down arrow. Any other value: no variable dropdown is displayed on the dashboard.</li>
+<li><strong>label</strong>: (optional) Display name of the variable dropdown. If null, then the dropdown label will be the variable name.</li>
+<li><strong>name</strong>: Data source variable name. Ex: <code>'PROMETHEUS_DS'</code>.</li>
+<li><strong>query</strong>: Type of data source. Ex: <code>'prometheus'</code>.</li>
+<li><strong>refresh</strong>: (default <code>'load'</code>) <code>'never'</code>: Variables queries are cached and values are not updated. This is fine if the values never change, but problematic if they are dynamic and change a lot. <code>'load'</code>: Queries the data source every time the dashboard loads. This slows down dashboard loading, because the variable query needs to be completed before dashboard can be initialized. <code>'time'</code>: Queries the data source when the dashboard time range changes. Only use this option if your variable options query contains a time range filter or is dependent on the dashboard time range.</li>
+<li><strong>regex</strong>: (default <code>''</code>) Regex filter for which data source instances to choose from in the variable value drop-down list. Leave this field empty to display all instances.</li>
+</ul>
+<p>@return A <a href="https://grafana.com/docs/grafana/latest/variables/variable-types/add-data-source-variable/">data source variable</a>.</p>
+<h2 id="templatecustom">template.custom</h2>
+<p>Use a <a href="https://grafana.com/docs/grafana/latest/variables/variable-types/add-custom-variable/">custom variable</a>
+for values that do not change.</p>
+<p>This might be numbers, strings, or even other variables.</p>
+<p>@params</p>
+<ul>
+<li><strong>allValues</strong>: (optional) Formatting for <a href="https://grafana.com/docs/grafana/latest/variables/formatting-multi-value-variables/#formatting-multi-value-variables">multi-value variables</a></li>
+<li><strong>current</strong>: Selected value</li>
+<li><strong>hide</strong>: (default <code>''</code>) <code>''</code>: the variable dropdown displays the variable Name or Label value. <code>'label'</code>: the variable dropdown only displays the selected variable value and a down arrow. Any other value: no variable dropdown is displayed on the dashboard.</li>
+<li><strong>includeAll</strong>: (default <code>false</code>) Whether all value option is available or not.</li>
+<li><strong>label</strong>: (default <code>''</code>) Display name of the variable dropdown. If you don’t enter a display name, then the dropdown label will be the variable name.</li>
+<li><strong>multi</strong>: (default <code>false</code>) Whether multiple values can be selected or not from variable value list.</li>
+<li><strong>name</strong>: Variable name</li>
+<li><strong>query</strong>: Comma separated without spacing list of selectable values.</li>
+<li><strong>refresh</strong>: (default <code>'never'</code>) <code>'never'</code>: Variables queries are cached and values are not updated. This is fine if the values never change, but problematic if they are dynamic and change a lot. <code>'load'</code>: Queries the data source every time the dashboard loads. This slows down dashboard loading, because the variable query needs to be completed before dashboard can be initialized. <code>'time'</code>: Queries the data source when the dashboard time range changes. Only use this option if your variable options query contains a time range filter or is dependent on the dashboard time range.</li>
+<li><strong>valuelabels</strong>: (default <code>{}</code>) Display names for values defined in query. For example, if <code>query='new,old'</code>, then you may display them as follows <code>valuelabels={new: 'nouveau', old: 'ancien'}</code>.</li>
+</ul>
+<p>@return A custom variable.</p>
+<h2 id="templatetext">template.text</h2>
+<p><a href="https://grafana.com/docs/grafana/latest/variables/variable-types/add-text-box-variable/">Text box variables</a>
+display a free text input field with an optional default value.
+This is the most flexible variable, because you can enter any value.
+Use this type of variable if you have metrics with high cardinality or if you want to
+update multiple panels in a dashboard at the same time.</p>
+<p>@params</p>
+<ul>
+<li><strong>label</strong>: (default <code>''</code>) Display name of the variable dropdown. If you don’t enter a display name, then the dropdown label will be the variable name.</li>
+<li><strong>name</strong>: Variable name.</li>
+</ul>
+<p>@return A text box variable.</p>
+<h2 id="templateadhoc">template.adhoc</h2>
+<p><a href="https://grafana.com/docs/grafana/latest/variables/variable-types/add-ad-hoc-filters/">Ad hoc filters</a>
+allow you to add key/value filters that are automatically added to all metric queries
+that use the specified data source. Unlike other variables, you do not use ad hoc filters in queries.
+Instead, you use ad hoc filters to write filters for existing queries.
+Note: Ad hoc filter variables only work with InfluxDB, Prometheus, and Elasticsearch data sources.</p>
+<p>@params</p>
+<ul>
+<li><strong>datasource</strong>: Target data source</li>
+<li><strong>hide</strong>: (default <code>''</code>) <code>''</code>: the variable dropdown displays the variable Name or Label value. <code>'label'</code>: the variable dropdown only displays the selected variable value and a down arrow. Any other value: no variable dropdown is displayed on the dashboard.</li>
+<li><strong>label</strong>: (optional) Display name of the variable dropdown. If you don’t enter a display name, then the dropdown label will be the variable name.</li>
+<li><strong>name</strong>: Variable name.</li>
+</ul>
+<p>@return An ad hoc filter</p>
+<h2 id="textnew">text.new</h2>
+<p>Creates a <a href="https://grafana.com/docs/grafana/latest/panels/visualizations/text-panel/">text panel</a>.</p>
+<p>@params</p>
+<ul>
+<li><strong>content</strong>: (default <code>''</code>)</li>
+<li><strong>datasource</strong>: (optional) Panel datasource.</li>
+<li><strong>description</strong>: (optional) Panel description.</li>
+<li><strong>mode</strong>: (default <code>'markdown'</code>) Rendering of the content: 'markdown','html', ...</li>
+<li><strong>repeat</strong>: (optional) Name of variable that should be used to repeat this panel.</li>
+<li><strong>repeatDirection</strong>: (default <code>'h'</code>) 'h' for horizontal or 'v' for vertical.</li>
+<li><strong>repeatMaxPerRow</strong>: (optional) Maximum panels per row in repeat mode.</li>
+<li><strong>span</strong>: (optional)</li>
+<li><strong>title</strong>: (default <code>''</code>) Panel title.</li>
+<li><strong>transparent</strong>: (optional) Whether to display the panel without a background.</li>
+</ul>
+<h2 id="timepickernew">timepicker.new</h2>
+<p>Creates a Timepicker</p>
+<p>@params</p>
+<ul>
+<li><strong>refresh_intervals</strong>: (default: <code>['5s','10s','30s','1m','5m','15m','30m','1h','2h','1d']</code>) Array of time durations</li>
+<li><strong>time_options</strong>: (default: <code>['5m','15m','1h','6h','12h','24h','2d','7d','30d']</code>) Array of time durations</li>
+</ul>
+<h2 id="transformationnew">transformation.new</h2>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../community-plugins/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Community Plugins
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a1609d9a.min.js"></script>
+      
+    
+  </body>
+</html>
