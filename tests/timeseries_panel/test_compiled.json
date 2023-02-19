@@ -8,6 +8,7 @@
                "seriesBy": "min"
             },
             "custom": {
+               "axisCenteredZero": false,
                "axisGridShow": "true",
                "axisLabel": "y-axis",
                "axisPlacement": "right",
@@ -89,6 +90,7 @@
                "mode": "palette-classic"
             },
             "custom": {
+               "axisCenteredZero": false,
                "axisLabel": "",
                "axisPlacement": "auto",
                "barAlignment": 0,
@@ -151,6 +153,7 @@
                "mode": "palette-classic"
             },
             "custom": {
+               "axisCenteredZero": false,
                "axisLabel": "",
                "axisPlacement": "auto",
                "barAlignment": 0,

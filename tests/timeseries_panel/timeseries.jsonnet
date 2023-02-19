@@ -47,6 +47,7 @@ local overrides = grafana.timeseriesPanel.overrides;
       axis_soft_max_not_set: std.assertEqual(false, std.objectHas(dash.fieldConfig.defaults.custom, 'axisSoftMax')),
       axis_show_grid_lines_not_set: std.assertEqual(false, std.objectHas(dash.fieldConfig.defaults.custom, 'showGridLines')),
       axis_linear_scale: std.assertEqual('linear', dash.fieldConfig.defaults.custom.scaleDistribution.type),
+      axis_centered_zero: std.assertEqual(false, dash.fieldConfig.defaults.custom.axisCenteredZero),
       unitless_values: std.assertEqual(false, std.objectHas(dash.fieldConfig.defaults, 'unit')),
       no_minimum: std.assertEqual(false, std.objectHas(dash.fieldConfig.defaults, 'min')),
       no_maximum: std.assertEqual(false, std.objectHas(dash.fieldConfig.defaults, 'max')),
@@ -109,6 +110,7 @@ local overrides = grafana.timeseriesPanel.overrides;
     can_set_axis_soft_min: std.assertEqual(123, grafana.timeseriesPanel.new(title='', axisSoftMin=123).fieldConfig.defaults.custom.axisSoftMin),
     can_set_axis_soft_max: std.assertEqual(123, grafana.timeseriesPanel.new(title='', axisSoftMax=123).fieldConfig.defaults.custom.axisSoftMax),
     can_set_log_scale: std.assertEqual({ type: 'log', log: 2 }, grafana.timeseriesPanel.new(title='', axisLogBase=2).fieldConfig.defaults.custom.scaleDistribution),
+    can_center_on_zero: std.assertEqual(true, grafana.timeseriesPanel.new(title='', axisCenteredZero=true).fieldConfig.defaults.custom.axisCenteredZero),
   },
   repeat_tests: {
     repeats_horizontally_by_default:

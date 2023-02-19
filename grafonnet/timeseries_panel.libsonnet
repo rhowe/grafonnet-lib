@@ -41,6 +41,7 @@
    * @param axisSoftMax (optional) The soft maximum for the axis.
    * @param axisShowGridLines (default `'auto'`) Whether to show grid lines. `'auto'`, `true`, or `false`.
    * @param axisLogBase (optional) If set, scale the axis logarithmically with the given base (valid values `2` or `10`). If not set, the axis will have a linear scale.
+   * @param axisCenteredZero (default `false`) Whether to center the vertical axis on zero.
    * @param tooltip (default `'single'`) The tooltip mode, `'single'`, `'all'`, or `'hidden'`.
    * @param tooltipSort (default `'none'`) Value sort order when tooltip mode is `'all'`. `'none'`, `'ascending'`, or `'descending'`.
    * @param links (optional) Array of links for the panel.
@@ -101,6 +102,7 @@
     axisSoftMax=null,
     axisShowGridLines='auto',
     axisLogBase=null,
+    axisCenteredZero=false,
     tooltip='single',
     tooltipSort=null,
     links=[],
@@ -146,6 +148,7 @@
             type: if axisLogBase == null then 'linear' else 'log',
             [if axisLogBase != null then 'log']: axisLogBase,
           },
+          axisCenteredZero: axisCenteredZero,
           showPoints: showPoints,
           spanNulls: connectNullValues,
           stacking: {
