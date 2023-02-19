@@ -18,14 +18,11 @@ Support for Grafana 9 panel types:
 
 # Grafonnet 7
 
-In the [grafonnet-7.0](./grafonnet-7.0) directory you will find code generated
-from a new project,
-[grafana/dashboard-spec](https://github.com/grafana/dashboard-spec). The
-generated code is still incomplete, however, the components present are
-useable.  We very much appreciate contributions in
-[grafana/dashboard-spec](https://github.com/grafana/dashboard-spec) for
-components yet to be added.
+This fork does not contain any changes for grafonnet 7, which is an attempt to generate the grafonnet library from the [grafana/dashboard-spec](https://github.com/grafana/dashboard-spec) dashboard specification collection.
 
+It is being supplanted by a similar effort which aims to generate the library
+from CUE definitions. Once that effort is complete, this fork can probably be
+retired.
 
 ## Contributing
 
