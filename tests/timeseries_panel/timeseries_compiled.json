@@ -1,6 +1,7 @@
 {
    "axis_tests": {
       "can_align_axis_right": true,
+      "can_center_on_zero": true,
       "can_label_axis": true,
       "can_set_axis_soft_max": true,
       "can_set_axis_soft_min": true,
@@ -22,6 +23,7 @@
    "can_set_unit": true,
    "check_defaults": {
       "axis_auto_placement": true,
+      "axis_centered_zero": true,
       "axis_label_blank": true,
       "axis_linear_scale": true,
       "axis_show_grid_lines_not_set": true,
