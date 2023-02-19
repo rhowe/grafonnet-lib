@@ -1,9 +1,9 @@
 UID = $(shell id -u $(USER))
 GID = $(shell id -g $(USER))
 
-E2E_CYPRESS_BASE_VERSION ?= 18.12.0
-E2E_GRAFANA_VERSION ?= 9.2.4
-JSONNET_VERSION ?= 0.18.0
+E2E_CYPRESS_BASE_VERSION ?= 18.12.1
+E2E_GRAFANA_VERSION ?= 9.3.6
+JSONNET_VERSION ?= 0.19.1
 
 help:         # Show this message.
 	@echo "\nAvailable Targets:\n"
