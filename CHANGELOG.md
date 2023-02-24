@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 (2023-02-24)
+
+- Add support for manipulating the time window to stat, table, and timeseries
+  panels via the `timeFrom` and `timeShift` parameters.
+
 ## 1.0.0 (2023-02-19)
 
 Bulk changelog update & arbitrary version bump.
