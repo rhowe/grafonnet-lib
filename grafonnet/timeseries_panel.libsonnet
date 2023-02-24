@@ -48,6 +48,8 @@
    * @param repeat (optional) Name of variable that should be used to repeat this panel.
    * @param repeatDirection (default `'h'`) 'h' for horizontal or 'v' for vertical.
    * @param repeatMaxPerRow (optional) How many panels to limit each row to when repeating horizontally.
+   * @param timeFrom (optional) Override the time window for the panel.
+   * @param timeShift (optional) Shift the time window for the panel.
    * @return A json that represents a graph panel.
    *
    * @method addTarget(target) Adds a target object.
@@ -109,6 +111,8 @@
     repeat=null,
     repeatDirection='h',
     repeatMaxPerRow=null,
+    timeFrom=null,
+    timeShift=null,
   ):: {
     type: 'timeseries',
     title: title,
@@ -195,6 +199,8 @@
     [if repeat != null then 'repeat']: repeat,
     [if repeat != null then 'repeatDirection']: repeatDirection,
     [if repeat != null && repeatDirection == 'h' && repeatMaxPerRow != null then 'maxPerRow']: repeatMaxPerRow,
+    [if timeFrom != null then 'timeFrom']: timeFrom,
+    [if timeShift != null then 'timeShift']: timeShift,
     targets: [],
     _nextTarget:: 0,
     addThreshold(color, value=null):: self {

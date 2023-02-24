@@ -60,6 +60,8 @@ local overrides = grafana.timeseriesPanel.overrides;
       thresholds_are_absolute: std.assertEqual('absolute', dash.fieldConfig.defaults.thresholds.mode),
       no_threshold_steps: std.assertEqual([], dash.fieldConfig.defaults.thresholds.steps),
       no_overrides: std.assertEqual([], dash.fieldConfig.overrides),
+      no_time_window_override: std.assertEqual(false, std.objectHas(dash, 'timeFrom')),
+      no_time_window_shift: std.assertEqual(false, std.objectHas(dash, 'timeShift')),
     },
   can_set_description: std.assertEqual(
     'A description',
@@ -79,6 +81,8 @@ local overrides = grafana.timeseriesPanel.overrides;
   can_map_missing_values: std.assertEqual(123, grafana.timeseriesPanel.new(title='', noValue=123).fieldConfig.defaults.noValue),
   can_display_thresholds: std.assertEqual('line', grafana.timeseriesPanel.new(title='', thresholdDisplay='line').fieldConfig.defaults.custom.thresholdsStyle.mode),
   thresholds_can_be_percentages: std.assertEqual('percentage', grafana.timeseriesPanel.new(title='', thresholdMode='percentage').fieldConfig.defaults.thresholds.mode),
+  can_override_time_window: std.assertEqual('3d', grafana.timeseriesPanel.new(title='', timeFrom='3d').timeFrom),
+  can_shift_time_window: std.assertEqual('24h', grafana.timeseriesPanel.new(title='', timeShift='24h').timeShift),
   legend_tests: {
     can_hide: std.assertEqual('hidden', grafana.timeseriesPanel.new(title='', legendMode='hidden').options.legend.displayMode),
     can_display_as_table: std.assertEqual('table', grafana.timeseriesPanel.new(title='', legendMode='table').options.legend.displayMode),
