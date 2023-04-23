@@ -5,8 +5,20 @@ Jsonnet libraries for writing Grafana dashboards as code.
 This is a fork of grafonnet-lib from Grafana Labs, with improved support for
 recent Grafana features.
 
-Grafana's docs are here: https://grafana.github.io/grafonnet-lib/ although this
-codebase has diverged somewhat from the API described there.
+The original library has
+[documentation](https://grafana.github.io/grafonnet-lib/) from Grafana although
+this codebase has diverged somewhat from the API described there.
+
+## New Grafonnet library from Grafana
+
+You should probably only use this fork if you have an existing codebase using
+the old `grafonnet-lib` codebase from Grafana but want to use new panel types.
+
+Grafana have since launched a new Grafonnet library which is not backwards
+compatible, but is the future of Grafonnet development. You should probably use
+that instead of this.
+
+Find the new library at [grafana/grafonnet](https://github.com/grafana/grafonnet).
 
 ## What's different in this fork?
 
