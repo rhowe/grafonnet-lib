@@ -2,7 +2,7 @@ UID = $(shell id -u $(USER))
 GID = $(shell id -g $(USER))
 
 E2E_CYPRESS_BASE_VERSION ?= 18.12.1
-E2E_GRAFANA_VERSION ?= 9.3.6
+E2E_GRAFANA_VERSION ?= 12.2.0
 JSONNET_VERSION ?= 0.21.0-debian-12-r6
 
 help:         # Show this message.
