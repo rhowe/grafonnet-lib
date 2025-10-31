@@ -3,7 +3,7 @@ GID = $(shell id -g $(USER))
 
 E2E_CYPRESS_BASE_VERSION ?= 18.12.1
 E2E_GRAFANA_VERSION ?= 9.3.6
-JSONNET_VERSION ?= 0.19.1
+JSONNET_VERSION ?= 0.21.0-debian-12-r6
 
 help:         # Show this message.
 	@echo "\nAvailable Targets:\n"
@@ -15,7 +15,7 @@ test:         # Run all unit tests.
 		-v $$PWD:$$PWD \
 		-u $(UID):$(GID) \
 		--entrypoint bash \
-		bitnami/jsonnet:$(JSONNET_VERSION) \
+		bitnamilegacy/jsonnet:$(JSONNET_VERSION) \
 		tests.sh
 
 test-update:  # Run all unit tests while copying test_output.json to compiled.json file.
@@ -24,7 +24,7 @@ test-update:  # Run all unit tests while copying test_output.json to compiled.js
 		-v $$PWD:$$PWD \
 		-u $(UID):$(GID) \
 		--entrypoint bash \
-		bitnami/jsonnet:$(JSONNET_VERSION) \
+		bitnamilegacy/jsonnet:$(JSONNET_VERSION) \
 		tests.sh update
 
 e2e:          # Run all end-to-end tests.
